@@ -1,0 +1,32 @@
+{
+  "name": "template_engines_test",
+  "version": "1.0.0",
+  "description": "template engines test speed",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --progress",
+    "prod": "NODE_ENV=production webpack --progress",
+    "mustache": "mustache data/data.json mustache_templates/index.mustache > mustache.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scarry1992/template_engines_test.git"
+  },
+  "author": "Sergei Buncevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scarry1992/template_engines_test/issues"
+  },
+  "homepage": "https://github.com/scarry1992/template_engines_test#readme",
+  "devDependencies": {
+    "webpack": "^2.3.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "file-loader": "^0.10.1",
+    "mustache": "^2.3.0",
+    "mustache-loader": "^0.4.1",
+    "pug": "^2.0.0-beta11",
+    "pug-loader": "^2.3.0"
+  }
+}
